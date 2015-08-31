@@ -17,5 +17,5 @@ Usage
 -----
 
 ```
-./craplog <path_to_your_repository>
+./craplog.py <path_to_your_repository>
 ```
