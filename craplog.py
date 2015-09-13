@@ -54,7 +54,17 @@ def is_git_log_crap():
 
 def is_commit_message_crap(message):
     words = message.split()
-    has_too_little_words = len(words) < 3
-    return has_too_little_words
+    number_of_words = len(words)
+    number_of_short_words = 0
+    has_too_little_words = number_of_words < 3
+
+    for word in words:
+        if len(word) < 3:
+            number_of_short_words += 1
+
+    short_words_percentage = float(number_of_short_words)/float(number_of_words) * 100
+    has_to_many_short_words = short_words_percentage >= 50
+
+    return has_too_little_words or has_to_many_short_words
 
 is_git_log_crap()
