@@ -19,3 +19,7 @@ Usage
 ```
 ./craplog.py <path_to_your_repository>
 ```
+
+References
+----------
+- [Writing good commit message](https://stevegury.github.io/2014/05/Writing-good-commit-message.html)
