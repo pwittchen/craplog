@@ -23,3 +23,4 @@ Usage
 References
 ----------
 - [Writing good commit message](https://stevegury.github.io/2014/05/Writing-good-commit-message.html)
+- [My favourite Git Commit Message](https://fatbusinessman.com/2019/my-favourite-git-commit)
